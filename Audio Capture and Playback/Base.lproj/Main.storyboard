@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Audio_Capture_and_Playback" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5B-e8-N4w">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Record" id="o0H-Ir-7Hb">
+                                        <connections>
+                                            <action selector="addNewRecording:" destination="BYZ-38-t0r" id="Xtb-P3-O5T"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Gdn-UM-F3q"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="nNP-Qy-i8D"/>
+                                    <barButtonItem systemItem="play" id="jLy-7b-mlO">
+                                        <connections>
+                                            <action selector="playButtonPressed:" destination="BYZ-38-t0r" id="9d0-Qc-Iwg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="fQ5-xG-I7i"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="n31-5R-SLG"/>
+                                    <barButtonItem title="Profiles" id="fHB-e0-n4i">
+                                        <connections>
+                                            <action selector="profilesPressed:" destination="BYZ-38-t0r" id="3xE-B0-mmv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C5B-e8-N4w" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8TG-D4-B9l"/>
+                            <constraint firstItem="C5B-e8-N4w" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Q08-GO-PHm"/>
+                            <constraint firstItem="C5B-e8-N4w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n05-Wj-Y41"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="recordButton" destination="o0H-Ir-7Hb" id="HLz-fF-QXl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
